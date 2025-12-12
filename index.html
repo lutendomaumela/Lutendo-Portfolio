@@ -3,31 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lutendo Maumela | Software Engineer & Cybersecurity Enthusiast</title>
+    <title>Lutendo Maumela | Software Engineer & Aspiring Cybersecurity Specialist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Loading Screen -->
+    <!-- Loading Screen - MATCHES YOUR CSS -->
     <div class="loader">
-        <div class="profile-img floating">
-            <i class="fas fa-laptop-code"></i>
+        <div class="loader-content">
+            <div class="loader-profile">
+                <div class="loader-frame">
+                    <img src="./assets/lutendo.jpeg" alt="Lutendo Maumela" class="loader-photo">
+                    <div class="loader-ring"></div>
+                </div>
+            </div>
+            <div class="loader-text">
+                <div class="hacking-terminal">
+                    <div class="terminal-line">> Initializing portfolio system...</div>
+                    <div class="terminal-line">> Loading security protocols...</div>
+                    <div class="terminal-line">> Scanning for vulnerabilities...</div>
+                    <div class="terminal-line">> Deploying cyber defenses...</div>
+                    <div class="terminal-line">> Welcome to Lutendo Maumela Portfolio</div>
+                </div>
+                <div class="loading-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Header & Navigation -->
+    <!-- Header & Navigation - ADDED IDs -->
     <header>
         <div class="container">
             <nav>
-                <a href="#" class="logo">Lutendo<span>Maumela</span></a>
-                <div class="nav-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-terminal"></i>
+                    </div>
+                    <span>Lutendo<span class="accent">Maumela</span></span>
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                    <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
+                    <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
+                    <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
+                    <a href="#certifications" class="nav-link"><i class="fas fa-award"></i> Certifications</a>
+                    <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
                 </div>
-                <button class="mobile-menu-btn">
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
@@ -36,22 +61,65 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="cyber-grid"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text fade-in">
-                    <h1>Hi, I'm <span>Lutendo Maumela</span></h1>
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Currently Open to Work</span>
+                    </div>
+                    <h1>Building Secure Digital Futures</h1>
+                    <h2>Hi, I'm <span class="gradient-text">Lutendo Maumela</span></h2>
                     <p>
-                        A passionate <span class="typing-text">Software Engineer</span> with a keen interest in 
-                        <span class="typing-text">Cybersecurity</span>. Final-year Computer Science student eager to apply my skills in real-world applications.
+                        A passionate <span class="typing-text">Software Engineer</span> and 
+                        <span class="typing-text">Aspiring Cybersecurity Specialist</span>. 
+                        I create robust applications with security at their core, blending cutting-edge 
+                        development with proactive protection.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn">View My Projects</a>
-                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                        <a href="#projects" class="btn cyber-btn">
+                            <i class="fas fa-rocket"></i>
+                            Explore My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-shield-alt"></i>
+                            Secure Connection
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="number" data-count="15">0</span>
+                            <span class="label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-count="15">0</span>
+                            <span class="label">Technologies</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number" data-count="4">0</span>
+                            <span class="label">Certifications</span>
+                        </div>
                     </div>
                 </div>
                 <div class="hero-image fade-in delay-1">
-                    <div class="profile-img floating">
-                        <i class="fas fa-laptop-code"></i>
+                    <div class="profile-container">
+                        <div class="profile-frame">
+                            <img src="./assets/lutendo.jpeg" alt="Lutendo Maumela" class="profile-photo">
+                            <div class="profile-glow"></div>
+                            <div class="profile-ring profile-ring-1"></div>
+                            <div class="profile-ring profile-ring-2"></div>
+                            <div class="profile-ring profile-ring-3"></div>
+                        </div>
+                        <div class="open-to-work">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Open to Software Engineering & Cybersecurity Roles</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,200 +130,348 @@
     <section id="about" class="about">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>About Me</h2>
-                <p>Learn more about my background, education, and professional interests</p>
+                <h2>My Journey</h2>
+                <p>From code enthusiast to aspiring cybersecurity-focused software engineer</p>
             </div>
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <p>
-                        I'm a final-year Computer Science and Informatics student at the University of Johannesburg with a strong foundation in software engineering principles and a growing interest in cybersecurity. My academic journey has equipped me with both theoretical knowledge and practical experience in building full-stack applications using modern technologies.
-                    </p>
-                    <p>
-                        Beyond my coursework, I actively explore cybersecurity principles through platforms like TryHackMe, where I'm developing hands-on skills with security tools and understanding modern web application vulnerabilities. I'm passionate about creating secure, efficient software solutions that address real-world problems.
-                    </p>
-                    <p>
-                        I'm seeking opportunities to apply my technical skills and security-aware perspective to a Software Engineering or Cybersecurity role, where I can contribute to innovative projects while continuing to grow professionally.
-                    </p>
+                    <div class="journey-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Computer Science Graduate</h3>
+                                <span class="timeline-date">University of Johannesburg</span>
+                                <p>Completed comprehensive studies in software engineering, algorithms, and system security, laying the foundation for secure software development.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Cybersecurity Training</h3>
+                                <span class="timeline-date">Ongoing Development</span>
+                                <p>Actively pursuing cybersecurity expertise through certifications, practical labs, and security tool mastery with focus on security operations.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h3>Full-Stack Development</h3>
+                                <span class="timeline-date">Professional Focus</span>
+                                <p>Building secure, scalable applications using modern technologies while implementing security best practices throughout the development lifecycle.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="about-stats fade-in delay-1">
-                    <div class="stat-card glass-effect">
+                    <div class="stat-card glass-effect hover-lift">
                         <i class="fas fa-graduation-cap"></i>
-                        <h3>Final Year</h3>
-                        <p>BSc Computer Science & Informatics</p>
+                        <h3>BSc Graduate</h3>
+                        <p>Computer Science & Informatics</p>
                     </div>
-                    <div class="stat-card glass-effect">
-                        <i class="fas fa-code"></i>
+                    <div class="stat-card glass-effect hover-lift">
+                        <i class="fas fa-code-branch"></i>
                         <h3>10+</h3>
-                        <p>Projects Completed</p>
+                        <p>Projects Delivered</p>
                     </div>
-                    <div class="stat-card glass-effect">
+                    <div class="stat-card glass-effect hover-lift">
                         <i class="fas fa-shield-alt"></i>
-                        <h3>Cybersecurity</h3>
-                        <p>Enthusiast</p>
+                        <h3>Security Training</h3>
+                        <p>Security Operations Focus</p>
                     </div>
-                    <div class="stat-card glass-effect">
-                        <i class="fas fa-users"></i>
-                        <h3>Team Player</h3>
-                        <p>Collaborative Mindset</p>
+                    <div class="stat-card glass-effect hover-lift">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Full Stack</h3>
+                        <p>End-to-End Solutions</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section - FIXED STRUCTURE -->
     <section id="skills" class="skills">
+        <div class="cyber-grid"></div>
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Technical Skills</h2>
-                <p>My technical expertise spans across software development and cybersecurity domains</p>
+                <h2>Technical Arsenal</h2>
+                <p>Mastering the tools that build and protect digital ecosystems</p>
             </div>
             <div class="skills-container">
-                <div class="skill-category fade-in cyber-border">
-                    <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">Java</div>
-                        <div class="skill-item">C++</div>
-                        <div class="skill-item">C#</div>
-                        <div class="skill-item">Assembly</div>
-                        <div class="skill-item">JavaScript/TypeScript</div>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">SQL</div>
-                         <div class="skill-item">HTML5</div>
-                          <div class="skill-item">CSS</div>
-                        
+                <!-- Development Stack -->
+                <div class="skill-category fade-in cyber-border hover-glow">
+                    <div class="skill-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Development Stack</h3>
                     </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-level="80%"></div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
                         </div>
-                        <small>Overall Proficiency: 80%</small>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript/TypeScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C#</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Assembly</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="65"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-category fade-in delay-1 cyber-border">
-                    <h3><i class="fas fa-cogs"></i> Frameworks & Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Node.js</div>
-                        <div class="skill-item">Express.js</div>
-                        <div class="skill-item">Git</div>
-                        <div class="skill-item">GitHub</div>
-                        <div class="skill-item">MySQL</div>
-                        <div class="skill-item">Prisma ORM</div>
-                        <div class="skill-item">Tailwind CSS</div>
-                        <div class="skill-item">Supabase</div>
-                        <div class="skill-item">Vercel</div>
-                        <div class="skill-item">Hostinger</div>
+
+                <!-- Tools & Platforms -->
+                <div class="skill-category fade-in delay-1 cyber-border hover-glow">
+                    <div class="skill-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Tools & Platforms</h3>
                     </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-level="85%"></div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
                         </div>
-                        <small>Overall Proficiency: 85%</small>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Prisma ORM</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Supabase</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Vercel</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Hostinger</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skill-category fade-in delay-2 cyber-border">
-                    <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
-                    <div class="skill-items">
-                        <div class="skill-item cyber-security">Kali Linux</div>
-                        <div class="skill-item cyber-security">OhSint</div>
-                        <div class="skill-item cyber-security">Wireshark</div>
-                        <div class="skill-item cyber-security">Nmap</div>
-                        <div class="skill-item cyber-security">Metasploit</div>
-                        <div class="skill-item cyber-security">Vulnerability Analysis</div>
-                        <div class="skill-item cyber-security">Exploitation</div>
-                        <div class="skill-item cyber-security">Chronicle SecOps</div>
-                        
+
+                <!-- Security Toolkit -->
+                <div class="skill-category fade-in delay-2 cyber-border hover-glow">
+                    <div class="skill-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Security Toolkit</h3>
                     </div>
-                    <div class="skill-bar-container">
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-level="75%"></div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kali Linux</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
                         </div>
-                        <small>Overall Proficiency: 75%</small>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Wireshark</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Nmap</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Metasploit</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Google Chronicle</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" data-level="70"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- Projects Section - FIXED STRUCTURE -->
     <section id="projects" class="projects">
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Projects & Experience</h2>
-                <p>A showcase of my academic and personal development projects</p>
+                <h2>Innovation Portfolio</h2>
+                <p>Where code meets creativity and security meets innovation</p>
             </div>
 
             <!-- Advanced Projects -->
             <div class="project-category">
-                <h3 class="category-title fade-in">Advanced Projects</h3>
+                <h3 class="category-title fade-in">Enterprise Solutions</h3>
                 <div class="projects-grid">
-                    <div class="project-card fade-in">
-                        <div class="project-video">
-                            <div class="video-container video-placeholder">
-                                <div class="video-placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-chart-line"></i>
-                                    </div>
-                                    <h4>BenchmarkTrader Demo</h4>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">Live Trading</span>
-                                        <span class="feature-tag">Portfolio Management</span>
-                                        <span class="feature-tag">Broker Matching</span>
-                                    </div>
-                                    
-                                </div>
+                    <div class="project-card fade-in hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <img src="./assets/trade.jpg" alt="BenchmarkTrader" class="project-img">
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Team Project</span>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>BenchmarkTrader</h3>
-                            <p>A comprehensive trading platform that connects beginner traders/investors with expert brokers. Features include broker-client matching, opportunity discovery, proposal system with automatic trade execution, portfolio monitoring, and an educational center.</p>
+                            <div class="project-header">
+                                <h3>BenchmarkTrader: Full-Stack Trading Platform</h3>
+                                <span class="project-ribbon">Enterprise</span>
+                            </div>
+                            <p>Collaborated in team environment to engineer comprehensive trading platform using TERN stack with Prisma ORM and Supabase integration. Coordinated with peer developers to implement broker-client matching system and automated trade execution workflow.</p>
                             <div class="project-tech">
-                                <span>React</span>
-                                <span>TypeScript</span>
-                                <span>Node.js</span>
-                                <span>Express.js</span>
-                                <span>Prisma</span>
-                                <span>Supabase</span>
-                                <span>Tailwind CSS</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Supabase</span>
+                                <span class="tech-tag">Prisma ORM</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://youtu.be/bqb8qT14MnY" target="_blank" class="video-demo-btn">
-                                    <i class="fas fa-external-link-alt"></i> Watch Full Demo
+                                <a href="https://youtu.be/bqb8qT14MnY" target="_blank" class="project-link live-demo">
+                                    <i class="fas fa-play"></i> Watch Demo
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card fade-in delay-1">
-                        <div class="project-video">
-                            <div class="video-container video-placeholder">
-                                <div class="video-placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-paw"></i>
-                                    </div>
-                                    <h4>WildGraph Demo</h4>
-                                    <p>Wildlife Protection System</p>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">Pathfinding</span>
-                                        <span class="feature-tag">Graph Algorithms</span>
-                                        <span class="feature-tag">Anti-Poaching</span>
-                                    </div>
-                                   
-                                </div>
+                    <div class="project-card fade-in delay-1 hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <img src="./assets/marataba-7.jpg" alt="WildGraph" class="project-img">
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Team Project</span>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>WildGraph</h3>
-                            <p>A Java application designed to protect animals in nature reserves from poaching by determining critical corridors and paths that poachers might take. The system calculates the shortest path a poacher could potentially use and allows adjustment of terrain maps for unique challenges.</p>
+                            <div class="project-header">
+                                <h3>WildGraph: Wildlife Protection System</h3>
+                                <span class="project-ribbon">Research</span>
+                            </div>
+                            <p>Worked collaboratively to develop Java application utilizing graph theory and pathfinding algorithms for conservation efforts. Engaged in team problem-solving sessions to design algorithms identifying critical protection corridors.</p>
                             <div class="project-tech">
-                                <span>Java</span>
-                                <span>Algorithms</span>
-                                <span>Graph Theory</span>
-                                <span>Pathfinding</span>
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Algorithms</span>
+                                <span class="tech-tag">Graph Theory</span>
+                                <span class="tech-tag">Pathfinding</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://youtu.be/H5QFhbg6Dfg" target="_blank" class="video-demo-btn">
-                                    <i class="fas fa-external-link-alt"></i> Watch Full Demo
+                                <a href="https://youtu.be/H5QFhbg6Dfg" target="_blank" class="project-link live-demo">
+                                    <i class="fas fa-play"></i> Watch Demo
                                 </a>
                             </div>
                         </div>
@@ -263,76 +479,91 @@
                 </div>
             </div>
 
-            <!-- Intermediate Projects -->
+            <!-- Cybersecurity Projects -->
             <div class="project-category">
-                <h3 class="category-title fade-in delay-1">Intermediate Projects</h3>
+                <h3 class="category-title fade-in delay-1">Cybersecurity Experience</h3>
                 <div class="projects-grid">
-                    <div class="project-card fade-in">
-                        <div class="project-img">
-                            <div class="image-placeholder">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-tools"></i>
-                                    </div>
-                                    <h4>Thomu Plumbing</h4>
-                                    <p>Professional Business Website</p>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">React</span>
-                                        <span class="feature-tag">Responsive</span>
-                                        <span class="feature-tag">Hostinger</span>
-                                    </div>
-                                   
+                    <div class="project-card fade-in hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <div class="cyber-icon">
+                                    <i class="fas fa-shield-alt"></i>
                                 </div>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Certification</span>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>Thomu Plumbing Website</h3>
-                            <p>A professional business website for Thomu Plumbing Services, showcasing their services, contact information, and service areas. The website is fully responsive and provides an online presence for the plumbing business.</p>
-                            <div class="project-tech">
-                                <span>React</span>
-                                <span>Tailwind CSS</span>
-                                <span>Hostinger</span>
-                                <span>Responsive Design</span>
+                            <div class="project-header">
+                                <h3>Cybersecurity Foundations & Security Operations</h3>
+                                <span class="project-ribbon">Training</span>
                             </div>
-                            <div class="project-links">
-                                <a href="https://thomuplumbing.com/" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> Live Website
-                                </a>
+                            <p>Completed Google Cloud security operations curriculum with focus on Chronicle platform for threat detection and investigation. Applied security tools including Wireshark and Nmap in practical lab environments for network analysis.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Google Chronicle</span>
+                                <span class="tech-tag">Wireshark</span>
+                                <span class="tech-tag">Nmap</span>
+                                <span class="tech-tag">Threat Detection</span>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card fade-in delay-1">
-                        <div class="project-img">
-                            <div class="image-placeholder">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-shield-alt"></i>
-                                    </div>
-                                    <h4>Cybersecurity Learning</h4>
-                                    <p>Security Skills Development</p>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">Kali Linux</span>
-                                        <span class="feature-tag">OhSint</span>
-                                        <span class="feature-tag">Wireshark</span>
-                                        
-                                    </div>
+                    <div class="project-card fade-in delay-1 hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <div class="cyber-icon">
+                                    <i class="fas fa-lock"></i>
                                 </div>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Simulation</span>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>Cybersecurity Learning</h3>
-                            <p>Actively building cybersecurity knowledge through TryHackMe labs, exploring tools like Wireshark and Nmap, and studying the OWASP Top 10 vulnerabilities. Developing practical skills in network analysis, vulnerability assessment, and security tool usage.</p>
+                            <div class="project-header">
+                                <h3>Datacom Cybersecurity Job Simulation</h3>
+                                <span class="project-ribbon">Practical</span>
+                            </div>
+                            <p>Conducted ransomware attack investigation following incident response protocols. Prepared comprehensive incident documentation detailing attack lifecycle and business impact. Performed risk assessment identifying critical vulnerabilities and mitigation strategies.</p>
                             <div class="project-tech">
-                                <span>Kali Linux</span>
-                                <span>OhSint</span>
-                                <span>Wireshark</span>
-                                <span>Nmap</span>
-                                <span>Metasploit</span>
-                                <span>OWASP</span>
+                                <span class="tech-tag">Incident Response</span>
+                                <span class="tech-tag">Risk Assessment</span>
+                                <span class="tech-tag">Vulnerability Analysis</span>
+                                <span class="tech-tag">Mitigation Strategies</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Projects -->
+            <div class="project-category">
+                <h3 class="category-title fade-in delay-2">Professional Work</h3>
+                <div class="projects-grid">
+                    <div class="project-card fade-in hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <img src="./assets/thomu.png" alt="Thomu Plumbing" class="project-img">
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Live Site</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Thomu Plumbing</h3>
+                                <span class="project-ribbon">Professional</span>
+                            </div>
+                            <p>Professional business website showcasing plumbing services with responsive design, service areas, and contact integration. Built to establish strong online presence.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">Hostinger</span>
+                                <span class="tech-tag">Business</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://tryhackme.com" target="_blank">
-                                    <i class="fas fa-external-link-alt"></i> TryHackMe
+                                <a href="https://thomuplumbing.com/" target="_blank" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i> Visit Site
                                 </a>
                             </div>
                         </div>
@@ -340,140 +571,142 @@
                 </div>
             </div>
 
-            <!-- Beginner Projects -->
+            <!-- Fun Projects -->
             <div class="project-category">
-                <h3 class="category-title fade-in delay-2">Beginner Projects</h3>
+                <h3 class="category-title fade-in delay-2">Creative Ventures</h3>
                 <div class="projects-grid">
-                    <div class="project-card fade-in">
-                        <div class="project-img">
-                            <div class="image-placeholder">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-laugh-beam"></i>
-                                    </div>
-                                    <h4>House of Laughter</h4>
-                                    <p>Meme Generator App</p>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">React</span>
-                                        <span class="feature-tag">API Integration</span>
-                                        <span class="feature-tag">Fun</span>
-                                    </div>
-                                   
-                                </div>
+                    <div class="project-card fade-in hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <img src="./assets/meme.png" alt="House of Laughter" class="project-img">
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Live App</span>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>House of Laughter</h3>
-                            <p>A React-based meme generator that fetches hilarious content from external APIs. Features random meme generation with a single click, clean UI/UX, and real-time API integration for fresh daily content to brighten your day.</p>
+                            <div class="project-header">
+                                <h3>House of Laughter</h3>
+                                <span class="project-ribbon">Fun</span>
+                            </div>
+                            <p>Entertaining meme generator with real-time API integration. Features random meme generation, clean UI, and daily fresh content to bring joy to users.</p>
                             <div class="project-tech">
-                                <span>React</span>
-                                <span>JavaScript</span>
-                                <span>API Integration</span>
-                                <span>CSS</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Entertainment</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/lutendomaumela/fantastic-meme" target="_blank">
-                                    <i class="fab fa-github"></i> View Code
+                                <a href="https://fantastic-meme-forall.vercel.app/" target="_blank" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live App
+                                </a>
+                                <a href="https://github.com/lutendomaumela/fantastic-meme" target="_blank" class="project-link code-link">
+                                    <i class="fab fa-github"></i> Code
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card fade-in delay-1">
-                        <div class="project-img">
-                            <div class="image-placeholder">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-tasks"></i>
-                                    </div>
-                                    <h4>React Todo App</h4>
-                                    <p>Task Management Application</p>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">React</span>
-                                        <span class="feature-tag">Local Storage</span>
-                                        <span class="feature-tag">Productivity</span>
-                                    </div>
-                                    
-                                </div>
+                    <div class="project-card fade-in delay-1 hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <img src="./assets/todo.png" alt="Todo App" class="project-img">
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Live App</span>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>React Todo App</h3>
-                            <p>A simple and intuitive todo application built with React that allows users to add, edit, delete, and mark tasks as completed. Features a clean user interface and local storage persistence.</p>
+                            <div class="project-header">
+                                <h3>Productivity Suite</h3>
+                                <span class="project-ribbon">Utility</span>
+                            </div>
+                            <p>Advanced todo application with local storage, task categorization, and intuitive interface. Built to demonstrate modern React patterns and state management.</p>
                             <div class="project-tech">
-                                <span>React</span>
-                                <span>JavaScript</span>
-                                <span>CSS</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Local Storage</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Productivity</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/lutendomaumela/React-Todo-App" target="_blank">
-                                    <i class="fab fa-github"></i> View Code
+                                <a href="https://todo-app-theta-jade.vercel.app/" target="_blank" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live App
+                                </a>
+                                <a href="https://github.com/lutendomaumela/React-Todo-App" target="_blank" class="project-link code-link">
+                                    <i class="fab fa-github"></i> Code
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card fade-in delay-2">
-                        <div class="project-img">
-                            <div class="image-placeholder">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-folder"></i>
-                                    </div>
-                                    <h4>File Organizer</h4>
-                                    <p>CLI File Management Tool</p>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">Node.js</span>
-                                        <span class="feature-tag">CLI Tool</span>
-                                        <span class="feature-tag">Automation</span>
-                                    </div>
-                                </div>
+                    <div class="project-card fade-in delay-2 hover-3d">
+                        <div class="project-media">
+                            <div class="project-image">
+                                <img src="./assets/weather.png" alt="Weather App" class="project-img">
+                            </div>
+                            <div class="project-overlay">
+                                <span class="live-badge">Live App</span>
                             </div>
                         </div>
                         <div class="project-content">
-                            <h3>File Organizer</h3>
-                            <p>A simple and customizable Node.js CLI tool that organizes files in a folder into categorized subfolders like Images, Documents, Music, and more — perfect for cleaning up messy directories.</p>
+                            <div class="project-header">
+                                <h3>Weather Intelligence</h3>
+                                <span class="project-ribbon">Utility</span>
+                            </div>
+                            <p>Real-time weather forecasting application with location-based services, responsive design, and clean data visualization for accurate weather information.</p>
                             <div class="project-tech">
-                                <span>Node.js</span>
-                                <span>JavaScript</span>
-                                <span>CLI Tool</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">Data Visualization</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/lutendomaumela/file-organizer" target="_blank">
-                                    <i class="fab fa-github"></i> View Code
+                                <a href="https://weather-forecast-three-phi.vercel.app/" target="_blank" class="project-link live-demo">
+                                    <i class="fas fa-external-link-alt"></i> Live App
+                                </a>
+                                <a href="https://github.com/lutendomaumela/Weather-app" target="_blank" class="project-link code-link">
+                                    <i class="fab fa-github"></i> Code
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="project-card fade-in delay-3">
-                        <div class="project-img">
-                            <div class="image-placeholder">
-                                <div class="placeholder-content">
-                                    <div class="placeholder-icon">
-                                        <i class="fas fa-cloud"></i>
-                                    </div>
-                                    <h4>Weather App</h4>
-                                    <p>Weather Forecasting Application</p>
-                                    <div class="placeholder-features">
-                                        <span class="feature-tag">JavaScript</span>
-                                        <span class="feature-tag">API Integration</span>
-                                        <span class="feature-tag">Responsive</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3>Weather App</h3>
-                            <p>A weather application that fetches data from a public API and displays current weather conditions and forecasts. Features include location-based weather and responsive design.</p>
-                            <div class="project-tech">
-                                <span>JavaScript</span>
-                                <span>API Integration</span>
-                                <span>HTML/CSS</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/lutendomaumela/Weather-app" target="_blank">
-                                    <i class="fab fa-github"></i> View Code
-                                </a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="cyber-grid"></div>
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Cybersecurity Certifications</h2>
+                <p>Professional certifications in security operations and threat management</p>
+            </div>
+            <div class="certifications-container">
+                <div class="cert-card fade-in hover-lift">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Google Security Operations - Deep Dive</h3>
+                        <p>Advanced certification focusing on in-depth security operations using Google Cloud security tools and the Chronicle platform for comprehensive threat detection and response.</p>
+                    </div>
+                </div>
+                <div class="cert-card fade-in delay-1 hover-lift">
+                    <div class="cert-icon">
+                        <i class="fab fa-google"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Google Security Operations - Fundamentals</h3>
+                        <p>Foundational certification covering the basics of security operations, threat intelligence, and incident response using Google Cloud security solutions.</p>
+                    </div>
+                </div>
+                <div class="cert-card fade-in delay-2 hover-lift">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Datacom Security Operations Simulation</h3>
+                        <p>Practical simulation certification involving real-world security scenarios, incident response protocols, and risk assessment methodologies.</p>
                     </div>
                 </div>
             </div>
@@ -482,41 +715,54 @@
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
+        <div class="cyber-grid"></div>
         <div class="container">
             <div class="section-title fade-in">
-                <h2>Get In Touch</h2>
-                <p>Feel free to reach out for collaborations or opportunities</p>
+                <h2>Let's Build Something Secure</h2>
+                <p>Ready to discuss your next project or security challenge</p>
             </div>
             <div class="contact-container">
                 <div class="contact-info fade-in">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
+                    <div class="contact-item hover-lift">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
                             <h3>Email</h3>
                             <p>lutendomaumela28@gmail.com</p>
+                            <a href="mailto:lutendomaumela28@gmail.com" class="contact-link">Send Encrypted Message</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
+                    <div class="contact-item hover-lift">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Direct Line</h3>
                             <p>079 152 5189</p>
+                            <a href="tel:+27791525189" class="contact-link">Initiate Call</a>
                         </div>
                     </div>
                 </div>
                 <div class="contact-info fade-in delay-1">
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
-                            <h3>LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/lutendo-maumela-6a0328261/" target="_blank">linkedin.com/in/lutendo-maumela</a></p>
+                    <div class="contact-item hover-lift">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Professional Network</h3>
+                            <p>Connect for collaborations</p>
+                            <a href="https://www.linkedin.com/in/lutendo-maumela-6a0328261/" target="_blank" class="contact-link">View Profile</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/lutendomaumela" target="_blank">github.com/lutendomaumela</a></p>
+                    <div class="contact-item hover-lift">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Code Repository</h3>
+                            <p>Explore my projects</p>
+                            <a href="https://github.com/lutendomaumela" target="_blank" class="contact-link">View GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -527,12 +773,27 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/lutendo-maumela-6a0328261/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/lutendomaumela" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:lutendomaumela28@gmail.com"><i class="fas fa-envelope"></i></a>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-terminal"></i>
+                        <span>Lutendo<span class="accent">Maumela</span></span>
+                    </div>
+                    <p>Building secure digital solutions for tomorrow's challenges</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/lutendo-maumela-6a0328261/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/lutendomaumela" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:lutendomaumela28@gmail.com" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </div>
-            <p class="copyright">© 2024 Lutendo Maumela. All Rights Reserved.</p>
+            <p class="copyright">© 2024 Lutendo Maumela. Secured with <i class="fas fa-heart"></i> and clean code.</p>
         </div>
     </footer>
 
