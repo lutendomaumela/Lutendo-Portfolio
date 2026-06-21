@@ -1,803 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lutendo Maumela | Software Engineer & Aspiring Cybersecurity Specialist</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lutendo Maumela — Junior Software Engineer / Junior Cloud Engineer</title>
+<meta name="description" content="Lutendo Maumela. Junior Software Engineer and Junior Cloud Engineer. AWS, Terraform, Flask, Next.js, CI/CD.">
+
+<!-- Favicon: brand mark "LM", matches site accent -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0F14'/%3E%3Crect x='4' y='4' width='56' height='56' fill='none' stroke='%23FF7A30' stroke-width='3'/%3E%3Ctext x='32' y='40' font-family='monospace' font-size='22' font-weight='700' fill='%23FF7A30' text-anchor='middle'%3ELM%3C/text%3E%3C/svg%3E">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lutendo Maumela — Junior Software Engineer / Junior Cloud Engineer">
+<meta property="og:description" content="AWS, Terraform, Flask, Next.js, CI/CD — building applications and the infrastructure they run on.">
+<meta property="og:image" content="https://lutendo-portfolio.vercel.app/assets/lutendo.jpeg">
+<meta property="og:url" content="https://lutendo-portfolio.vercel.app/">
+
+<!-- Twitter card -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lutendo Maumela — Junior Software Engineer / Junior Cloud Engineer">
+<meta name="twitter:description" content="AWS, Terraform, Flask, Next.js, CI/CD — building applications and the infrastructure they run on.">
+<meta name="twitter:image" content="https://lutendo-portfolio.vercel.app/assets/lutendo.jpeg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Loading Screen - MATCHES YOUR CSS -->
-    <div class="loader">
-        <div class="loader-content">
-            <div class="loader-profile">
-                <div class="loader-frame">
-                    <img src="./assets/lutendo.jpeg" alt="Lutendo Maumela" class="loader-photo">
-                    <div class="loader-ring"></div>
-                </div>
-            </div>
-            <div class="loader-text">
-                <div class="hacking-terminal">
-                    <div class="terminal-line">> Initializing portfolio system...</div>
-                    <div class="terminal-line">> Loading security protocols...</div>
-                    <div class="terminal-line">> Scanning for vulnerabilities...</div>
-                    <div class="terminal-line">> Deploying cyber defenses...</div>
-                    <div class="terminal-line">> Welcome to Lutendo Maumela Portfolio</div>
-                </div>
-                <div class="loading-progress">
-                    <div class="progress-bar">
-                        <div class="progress-fill"></div>
-                    </div>
-                </div>
-            </div>
+
+<!-- Boot sequence -->
+<div class="boot" id="boot">
+  <div class="boot-inner">
+    <div class="boot-line">$ pipeline init --user lutendo-maumela</div>
+    <div class="boot-line">→ resolving stages: build, test, deploy, verify</div>
+    <div class="boot-line">→ status: <span class="ok">ready</span></div>
+  </div>
+  <div class="boot-bar"><div class="boot-fill"></div></div>
+</div>
+
+<!-- Header -->
+<header id="siteHeader">
+  <div class="container header-row">
+    <a href="#home" class="brand">
+      <span class="brand-mark">LM</span>
+      <span class="brand-name">Lutendo<span class="accent">.</span>Maumela</span>
+    </a>
+
+    <nav class="nav" id="navLinks">
+      <a href="#home" class="nav-link"><span class="nav-cmd">init</span>home</a>
+      <a href="#about" class="nav-link"><span class="nav-cmd">build</span>about</a>
+      <a href="#skills" class="nav-link"><span class="nav-cmd">config</span>skills</a>
+      <a href="#projects" class="nav-link"><span class="nav-cmd">deploy</span>projects</a>
+      <a href="#certifications" class="nav-link"><span class="nav-cmd">verify</span>certs</a>
+      <a href="#contact" class="nav-link"><span class="nav-cmd">connect</span>contact</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="blueprint-grid" aria-hidden="true"></div>
+  <div class="container hero-grid">
+
+    <div class="hero-copy reveal">
+      <div class="hero-id">
+        <div class="hero-photo">
+          <img src="./assets/lutendo.jpeg" alt="Lutendo Maumela">
         </div>
+        <div class="status-chip">
+          <span class="dot"></span> open to work
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        Lutendo Maumela
+      </h1>
+
+      <p class="hero-roles">
+        <span class="role-tag">Junior Software Engineer</span>
+        <span class="role-sep">/</span>
+        <span class="role-tag">Junior Cloud Engineer</span>
+      </p>
+
+      <p class="hero-desc">
+        I build applications and the infrastructure they run on. Flask and Next.js on the
+        application side, Terraform and AWS underneath it — wired together by a CI/CD
+        pipeline I designed, broke, and fixed enough times to actually understand it.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-solid">View deployed work <i class="fas fa-arrow-right"></i></a>
+        <a href="./assets/Lutendo_Maumela_Resume.pdf" class="btn btn-line" download>Download CV <i class="fas fa-download"></i></a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="meta-item"><span class="meta-num">10+</span><span class="meta-label">Shipped projects</span></div>
+        <div class="meta-item"><span class="meta-num">af-south-1</span><span class="meta-label">AWS region deployed</span></div>
+        <div class="meta-item"><span class="meta-num">UJ</span><span class="meta-label">Comp Sci & Informatics, 2025</span></div>
+      </div>
     </div>
 
-    <!-- Header & Navigation - ADDED IDs -->
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">
-                    <div class="logo-icon">
-                        <i class="fas fa-terminal"></i>
-                    </div>
-                    <span>Lutendo<span class="accent">Maumela</span></span>
-                </a>
-                <div class="nav-links" id="navLinks">
-                    <a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                    <a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a>
-                    <a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a>
-                    <a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a>
-                    <a href="#certifications" class="nav-link"><i class="fas fa-award"></i> Certifications</a>
-                    <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
-                </div>
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
+    <!-- SIGNATURE ELEMENT: live pipeline visualization -->
+    <div class="hero-pipeline reveal delay-1" aria-label="Animated representation of a CI/CD pipeline run">
+      <div class="pipeline-card">
+        <div class="pipeline-card-head">
+          <span class="pipeline-card-title"><i class="fas fa-code-branch"></i> shopswift / deploy.yml</span>
+          <span class="pipeline-card-branch">main</span>
         </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="cyber-grid"></div>
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
+        <div class="pipeline-stages" id="pipelineStages">
+          <div class="stage" data-stage="0">
+            <div class="stage-dot"></div>
+            <div class="stage-label">build</div>
+            <div class="stage-sub">flask + next.js</div>
+          </div>
+          <div class="stage" data-stage="1">
+            <div class="stage-dot"></div>
+            <div class="stage-label">test</div>
+            <div class="stage-sub">pytest / lint</div>
+          </div>
+          <div class="stage" data-stage="2">
+            <div class="stage-dot"></div>
+            <div class="stage-label">containerize</div>
+            <div class="stage-sub">docker → ECR</div>
+          </div>
+          <div class="stage" data-stage="3">
+            <div class="stage-dot"></div>
+            <div class="stage-label">provision</div>
+            <div class="stage-sub">terraform → AWS</div>
+          </div>
+          <div class="stage" data-stage="4">
+            <div class="stage-dot"></div>
+            <div class="stage-label">deploy</div>
+            <div class="stage-sub">EC2 / RDS / S3</div>
+          </div>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text fade-in">
-                    <div class="status-badge">
-                        <span class="status-dot"></span>
-                        <span class="status-text">Currently Open to Work</span>
-                    </div>
-                    <h1>Building Secure Digital Futures</h1>
-                    <h2>Hi, I'm <span class="gradient-text">Lutendo Maumela</span></h2>
-                    <p>
-                        A passionate <span class="typing-text">Software Engineer</span> and 
-                        <span class="typing-text">Aspiring Cybersecurity Specialist</span>. 
-                        I create robust applications with security at their core, blending cutting-edge 
-                        development with proactive protection.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn cyber-btn">
-                            <i class="fas fa-rocket"></i>
-                            Explore My Work
-                        </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fas fa-shield-alt"></i>
-                            Secure Connection
-                        </a>
-                         <a href="./assets/CV-Lutendo Maumela.pdf" class="btn btn-cv" download>
-        <i class="fas fa-download"></i>
-        Download CV
-    </a>
-                    </div>
-                    <div class="hero-stats">
-                        <div class="stat">
-                            <span class="number" data-count="15">0</span>
-                            <span class="label">Projects</span>
-                        </div>
-                        <div class="stat">
-                            <span class="number" data-count="15">0</span>
-                            <span class="label">Technologies</span>
-                        </div>
-                        <div class="stat">
-                            <span class="number" data-count="4">0</span>
-                            <span class="label">Certifications</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="hero-image fade-in delay-1">
-                    <div class="profile-container">
-                        <div class="profile-frame">
-                            <img src="./assets/lutendo.jpeg" alt="Lutendo Maumela" class="profile-photo">
-                            <div class="profile-glow"></div>
-                            <div class="profile-ring profile-ring-1"></div>
-                            <div class="profile-ring profile-ring-2"></div>
-                            <div class="profile-ring profile-ring-3"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+
+        <div class="pipeline-log" id="pipelineLog">
+          <div class="log-line">$ workflow triggered on push</div>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>My Journey</h2>
-                <p>From code enthusiast to aspiring cybersecurity-focused software engineer</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text fade-in">
-                    <div class="journey-timeline">
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Computer Science Graduate</h3>
-                                <span class="timeline-date">University of Johannesburg</span>
-                                <p>Completed comprehensive studies in software engineering, algorithms, and system security, laying the foundation for secure software development.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Cybersecurity Training</h3>
-                                <span class="timeline-date">Ongoing Development</span>
-                                <p>Actively pursuing cybersecurity expertise through certifications, practical labs, and security tool mastery with focus on security operations.</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker">
-                                <i class="fas fa-code"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <h3>Full-Stack Development</h3>
-                                <span class="timeline-date">Professional Focus</span>
-                                <p>Building secure, scalable applications using modern technologies while implementing security best practices throughout the development lifecycle.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-stats fade-in delay-1">
-                    <div class="stat-card glass-effect hover-lift">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h3>BSc Graduate</h3>
-                        <p>Computer Science & Informatics</p>
-                    </div>
-                    <div class="stat-card glass-effect hover-lift">
-                        <i class="fas fa-code-branch"></i>
-                        <h3>10+</h3>
-                        <p>Projects Delivered</p>
-                    </div>
-                    <div class="stat-card glass-effect hover-lift">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Security Training</h3>
-                        <p>Security Operations Focus</p>
-                    </div>
-                    <div class="stat-card glass-effect hover-lift">
-                        <i class="fas fa-network-wired"></i>
-                        <h3>Full Stack</h3>
-                        <p>End-to-End Solutions</p>
-                    </div>
-                </div>
-            </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="eyebrow">$ build — compiling the background</p>
+    <h2 class="section-title">How I got here</h2>
+
+    <div class="about-grid">
+      <div class="about-log reveal">
+        <div class="log-entry">
+          <span class="log-tag">2019 → 2026</span>
+          <h3>BSc Computer Science &amp; Informatics</h3>
+          <p>University of Johannesburg. Algorithms, systems design, and software engineering
+          fundamentals — the parts that don't show up in a demo but decide whether the demo
+          keeps working a year later.</p>
         </div>
-    </section>
-
-    <!-- Skills Section - FIXED STRUCTURE -->
-    <section id="skills" class="skills">
-        <div class="cyber-grid"></div>
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Technical Arsenal</h2>
-                <p>Mastering the tools that build and protect digital ecosystems</p>
-            </div>
-            <div class="skills-container">
-                <!-- Development Stack -->
-                <div class="skill-category fade-in cyber-border hover-glow">
-                    <div class="skill-header">
-                        <i class="fas fa-laptop-code"></i>
-                        <h3>Development Stack</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Java</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">JavaScript/TypeScript</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Python</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">React</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Node.js</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">C++</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">C#</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Assembly</span>
-                                <span class="skill-percent">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="65"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Platforms -->
-                <div class="skill-category fade-in delay-1 cyber-border hover-glow">
-                    <div class="skill-header">
-                        <i class="fas fa-cogs"></i>
-                        <h3>Tools & Platforms</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Git & GitHub</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">MySQL</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Prisma ORM</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Supabase</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Vercel</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Hostinger</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Security Toolkit -->
-                <div class="skill-category fade-in delay-2 cyber-border hover-glow">
-                    <div class="skill-header">
-                        <i class="fas fa-shield-alt"></i>
-                        <h3>Security Toolkit</h3>
-                    </div>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Kali Linux</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="80"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Wireshark</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Nmap</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Metasploit</span>
-                                <span class="skill-percent">65%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="65"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-info">
-                                <span class="skill-name">Google Chronicle</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-level" data-level="70"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="log-entry">
+          <span class="log-tag">team project</span>
+          <h3>Learned to ship with other people</h3>
+          <p>Led and contributed to team builds — BenchmarkTrader (trading platform) and
+          WildGraph (conservation pathfinding) — where the hard part wasn't the code, it was
+          agreeing on the architecture before writing it.</p>
         </div>
-    </section>
-
-    <!-- Projects Section - FIXED STRUCTURE -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Innovation Portfolio</h2>
-                <p>Where code meets creativity and security meets innovation</p>
-            </div>
-
-            <!-- Advanced Projects -->
-            <div class="project-category">
-                <h3 class="category-title fade-in">Enterprise Solutions</h3>
-                <div class="projects-grid">
-                    <div class="project-card fade-in hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <img src="./assets/trade.jpg" alt="BenchmarkTrader" class="project-img">
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Team Project</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>BenchmarkTrader: Full-Stack Trading Platform</h3>
-                                <span class="project-ribbon">Enterprise</span>
-                            </div>
-                            <p>Collaborated in team environment to engineer comprehensive trading platform using TERN stack with Prisma ORM and Supabase integration. Coordinated with peer developers to implement broker-client matching system and automated trade execution workflow.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Node.js</span>
-                                <span class="tech-tag">Supabase</span>
-                                <span class="tech-tag">Prisma ORM</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://youtu.be/bqb8qT14MnY" target="_blank" class="project-link live-demo">
-                                    <i class="fas fa-play"></i> Watch Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in delay-1 hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <img src="./assets/marataba-7.jpg" alt="WildGraph" class="project-img">
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Team Project</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>WildGraph: Wildlife Protection System</h3>
-                                <span class="project-ribbon">Research</span>
-                            </div>
-                            <p>Worked collaboratively to develop Java application utilizing graph theory and pathfinding algorithms for conservation efforts. Engaged in team problem-solving sessions to design algorithms identifying critical protection corridors.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Java</span>
-                                <span class="tech-tag">Algorithms</span>
-                                <span class="tech-tag">Graph Theory</span>
-                                <span class="tech-tag">Pathfinding</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://youtu.be/H5QFhbg6Dfg" target="_blank" class="project-link live-demo">
-                                    <i class="fas fa-play"></i> Watch Demo
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Cybersecurity Projects -->
-            <div class="project-category">
-                <h3 class="category-title fade-in delay-1">Cybersecurity Experience</h3>
-                <div class="projects-grid">
-                    <div class="project-card fade-in hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <div class="cyber-icon">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Certification</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Cybersecurity Foundations & Security Operations</h3>
-                                <span class="project-ribbon">Training</span>
-                            </div>
-                            <p>Completed Google Cloud security operations curriculum with focus on Chronicle platform for threat detection and investigation. Applied security tools including Wireshark and Nmap in practical lab environments for network analysis.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Google Chronicle</span>
-                                <span class="tech-tag">Wireshark</span>
-                                <span class="tech-tag">Nmap</span>
-                                <span class="tech-tag">Threat Detection</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in delay-1 hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <div class="cyber-icon">
-                                    <i class="fas fa-lock"></i>
-                                </div>
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Simulation</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Datacom Cybersecurity Job Simulation</h3>
-                                <span class="project-ribbon">Practical</span>
-                            </div>
-                            <p>Conducted ransomware attack investigation following incident response protocols. Prepared comprehensive incident documentation detailing attack lifecycle and business impact. Performed risk assessment identifying critical vulnerabilities and mitigation strategies.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Incident Response</span>
-                                <span class="tech-tag">Risk Assessment</span>
-                                <span class="tech-tag">Vulnerability Analysis</span>
-                                <span class="tech-tag">Mitigation Strategies</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Professional Projects -->
-            <div class="project-category">
-                <h3 class="category-title fade-in delay-2">Professional Work</h3>
-                <div class="projects-grid">
-                    <div class="project-card fade-in hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <img src="./assets/thomu.png" alt="Thomu Plumbing" class="project-img">
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Live Site</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Thomu Plumbing</h3>
-                                <span class="project-ribbon">Professional</span>
-                            </div>
-                            <p>Professional business website showcasing plumbing services with responsive design, service areas, and contact integration. Built to establish strong online presence.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Tailwind CSS</span>
-                                <span class="tech-tag">Hostinger</span>
-                                <span class="tech-tag">Business</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://thomuplumbing.com/" target="_blank" class="project-link live-demo">
-                                    <i class="fas fa-external-link-alt"></i> Visit Site
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Fun Projects -->
-            <div class="project-category">
-                <h3 class="category-title fade-in delay-2">Creative Ventures</h3>
-                <div class="projects-grid">
-                    <div class="project-card fade-in hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <img src="./assets/meme.png" alt="House of Laughter" class="project-img">
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Live App</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>House of Laughter</h3>
-                                <span class="project-ribbon">Fun</span>
-                            </div>
-                            <p>Entertaining meme generator with real-time API integration. Features random meme generation, clean UI, and daily fresh content to bring joy to users.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">API</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Entertainment</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://fantastic-meme-forall.vercel.app/" target="_blank" class="project-link live-demo">
-                                    <i class="fas fa-external-link-alt"></i> Live App
-                                </a>
-                                <a href="https://github.com/lutendomaumela/fantastic-meme" target="_blank" class="project-link code-link">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in delay-1 hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <img src="./assets/todo.png" alt="Todo App" class="project-img">
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Live App</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Productivity Suite</h3>
-                                <span class="project-ribbon">Utility</span>
-                            </div>
-                            <p>Advanced todo application with local storage, task categorization, and intuitive interface. Built to demonstrate modern React patterns and state management.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">Local Storage</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Productivity</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://todo-app-theta-jade.vercel.app/" target="_blank" class="project-link live-demo">
-                                    <i class="fas fa-external-link-alt"></i> Live App
-                                </a>
-                                <a href="https://github.com/lutendomaumela/React-Todo-App" target="_blank" class="project-link code-link">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card fade-in delay-2 hover-3d">
-                        <div class="project-media">
-                            <div class="project-image">
-                                <img src="./assets/weather.png" alt="Weather App" class="project-img">
-                            </div>
-                            <div class="project-overlay">
-                                <span class="live-badge">Live App</span>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <div class="project-header">
-                                <h3>Weather Intelligence</h3>
-                                <span class="project-ribbon">Utility</span>
-                            </div>
-                            <p>Real-time weather forecasting application with location-based services, responsive design, and clean data visualization for accurate weather information.</p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">API</span>
-                                <span class="tech-tag">CSS</span>
-                                <span class="tech-tag">Data Visualization</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://weather-forecast-three-phi.vercel.app/" target="_blank" class="project-link live-demo">
-                                    <i class="fas fa-external-link-alt"></i> Live App
-                                </a>
-                                <a href="https://github.com/lutendomaumela/Weather-app" target="_blank" class="project-link code-link">
-                                    <i class="fab fa-github"></i> Code
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="log-entry">
+          <span class="log-tag">self-directed</span>
+          <h3>Moved from "it runs" to "it's operated"</h3>
+          <p>Took a Flask API from a local script to a production system on AWS — VPC, EC2,
+          RDS, S3, IAM, Terraform-managed, deployed through GitHub Actions. Most of what I
+          know about infrastructure came from reading my own error logs at 1am.</p>
         </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="cyber-grid"></div>
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Cybersecurity Certifications</h2>
-                <p>Professional certifications in security operations and threat management</p>
-            </div>
-            <div class="certifications-container">
-                <div class="cert-card fade-in hover-lift">
-                    <div class="cert-icon">
-                        <i class="fab fa-google"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h3>Google Security Operations - Deep Dive</h3>
-                        <p>Advanced certification focusing on in-depth security operations using Google Cloud security tools and the Chronicle platform for comprehensive threat detection and response.</p>
-                    </div>
-                </div>
-                <div class="cert-card fade-in delay-1 hover-lift">
-                    <div class="cert-icon">
-                        <i class="fab fa-google"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h3>Google Security Operations - Fundamentals</h3>
-                        <p>Foundational certification covering the basics of security operations, threat intelligence, and incident response using Google Cloud security solutions.</p>
-                    </div>
-                </div>
-                <div class="cert-card fade-in delay-2 hover-lift">
-                    <div class="cert-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <div class="cert-content">
-                        <h3>Datacom Security Operations Simulation</h3>
-                        <p>Practical simulation certification involving real-world security scenarios, incident response protocols, and risk assessment methodologies.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="log-entry">
+          <span class="log-tag">ongoing</span>
+          <h3>Now applying it, and applying for roles</h3>
+          <p>Currently job hunting for junior software engineering and cloud/DevOps roles
+          across South Africa, while finishing the Kubernetes phase of my own infrastructure.</p>
         </div>
-    </section>
+      </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="cyber-grid"></div>
-        <div class="container">
-            <div class="section-title fade-in">
-                <h2>Let's Build Something Secure</h2>
-                <p>Ready to discuss your next project or security challenge</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info fade-in">
-                    <div class="contact-item hover-lift">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>lutendomaumela28@gmail.com</p>
-                            <a href="mailto:lutendomaumela28@gmail.com" class="contact-link">Send Encrypted Message</a>
-                        </div>
-                    </div>
-                    <div class="contact-item hover-lift">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Direct Line</h3>
-                            <p>079 152 5189</p>
-                            <a href="tel:+27791525189" class="contact-link">Initiate Call</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-info fade-in delay-1">
-                    <div class="contact-item hover-lift">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Professional Network</h3>
-                            <p>Connect for collaborations</p>
-                            <a href="https://www.linkedin.com/in/lutendo-maumela-6a0328261/" target="_blank" class="contact-link">View Profile</a>
-                        </div>
-                    </div>
-                    <div class="contact-item hover-lift">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Code Repository</h3>
-                            <p>Explore my projects</p>
-                            <a href="https://github.com/lutendomaumela" target="_blank" class="contact-link">View GitHub</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="about-cards reveal delay-1">
+        <div class="about-photo">
+          <img src="./assets/lutendo.jpeg" alt="Lutendo Maumela">
+          <span class="about-photo-tag">Pretoria, Gauteng — ZA</span>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <i class="fas fa-terminal"></i>
-                        <span>Lutendo<span class="accent">Maumela</span></span>
-                    </div>
-                    <p>Building secure digital solutions for tomorrow's challenges</p>
-                </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/lutendo-maumela-6a0328261/" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://github.com/lutendomaumela" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:lutendomaumela28@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-            <p class="copyright">© 2024 Lutendo Maumela. Secured with <i class="fas fa-heart"></i> and clean code.</p>
+        <div class="info-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>BSc Graduate</h4>
+          <p>Computer Science &amp; Informatics, University of Johannesburg</p>
         </div>
-    </footer>
+        <div class="info-card">
+          <i class="fas fa-server"></i>
+          <h4>Real infrastructure</h4>
+          <p>VPC, EC2, RDS, S3, ECR, IAM — provisioned with Terraform, not click-ops</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-code-branch"></i>
+          <h4>CI/CD, end to end</h4>
+          <p>GitHub Actions pipelines: test → build → push → deploy</p>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-users"></i>
+          <h4>Team-built systems</h4>
+          <p>Led collaborative builds across two academic and industry-style projects</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <script src="script.js"></script>
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow">$ config — environment variables</p>
+    <h2 class="section-title">Stack</h2>
+    <p class="section-sub">Grouped by what it's actually for, not how impressive it sounds.</p>
+
+    <div class="skills-grid">
+
+      <div class="skill-block reveal">
+        <h3><i class="fas fa-cloud"></i> Cloud &amp; Infrastructure</h3>
+        <div class="skill-row"><span>AWS (EC2, RDS, S3, IAM, VPC)</span><div class="bar"><div class="fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>Terraform</span><div class="bar"><div class="fill" data-level="80"></div></div></div>
+        <div class="skill-row"><span>Docker</span><div class="bar"><div class="fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>GitHub Actions (CI/CD)</span><div class="bar"><div class="fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>Kubernetes (k3s)</span><div class="bar"><div class="fill" data-level="55"></div></div></div>
+        <div class="skill-row"><span>NGINX / Linux</span><div class="bar"><div class="fill" data-level="75"></div></div></div>
+      </div>
+
+      <div class="skill-block reveal delay-1">
+        <h3><i class="fas fa-server"></i> Backend &amp; Languages</h3>
+        <div class="skill-row"><span>Python / Flask</span><div class="bar"><div class="fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>Java</span><div class="bar"><div class="fill" data-level="90"></div></div></div>
+        <div class="skill-row"><span>PostgreSQL</span><div class="bar"><div class="fill" data-level="80"></div></div></div>
+        <div class="skill-row"><span>SQLAlchemy / Alembic</span><div class="bar"><div class="fill" data-level="75"></div></div></div>
+        <div class="skill-row"><span>C++ / C#</span><div class="bar"><div class="fill" data-level="72"></div></div></div>
+      </div>
+
+      <div class="skill-block reveal delay-2">
+        <h3><i class="fas fa-window-restore"></i> Frontend &amp; Tooling</h3>
+        <div class="skill-row"><span>JavaScript / TypeScript</span><div class="bar"><div class="fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>React / Next.js</span><div class="bar"><div class="fill" data-level="85"></div></div></div>
+        <div class="skill-row"><span>Node.js</span><div class="bar"><div class="fill" data-level="80"></div></div></div>
+        <div class="skill-row"><span>Git / GitHub</span><div class="bar"><div class="fill" data-level="90"></div></div></div>
+        <div class="skill-row"><span>Prisma / Supabase</span><div class="bar"><div class="fill" data-level="75"></div></div></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section">
+  <div class="container">
+    <p class="eyebrow">$ deploy — release log</p>
+    <h2 class="section-title">Projects</h2>
+
+    <!-- Flagship -->
+    <div class="project-feature reveal">
+      <div class="feature-tag">flagship build</div>
+      <div class="feature-thumb"><img src="./assets/shopswift.png" alt="ShopSwift e-commerce platform" onerror="this.parentElement.style.display='none'"></div>
+      <h3>ShopSwift</h3>
+      <p>A production e-commerce platform built as both a real product and a deliberate
+      infrastructure learning ground. Flask + PostgreSQL backend, Next.js 15 frontend,
+      provisioned on AWS with Terraform and deployed through a GitHub Actions pipeline I
+      wrote myself — currently extending into Kubernetes (k3s).</p>
+      <div class="tech-row">
+        <span>Flask</span><span>PostgreSQL</span><span>Next.js 15</span><span>Terraform</span>
+        <span>AWS (EC2/RDS/S3/ECR)</span><span>Docker</span><span>GitHub Actions</span><span>k3s</span>
+      </div>
+      <div class="proj-links">
+        <a href="https://github.com/lutendomaumela/ShopSwift" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+      </div>
+      
+    </div>
+
+    <div class="project-category">
+      <h3 class="cat-title">Team builds</h3>
+      <div class="proj-grid">
+        <article class="proj-card reveal">
+          <div class="proj-thumb"><img src="./assets/trade.jpg" alt="BenchmarkTrader interface"></div>
+          <div class="proj-top"><span class="proj-kind">Team project</span></div>
+          <h4>BenchmarkTrader</h4>
+          <p>Full-stack trading platform built with the TERN stack, Prisma, and Supabase.
+          Co-built a broker-client matching system and automated trade execution workflow.</p>
+          <div class="tech-row"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Supabase</span><span>Prisma</span></div>
+          <div class="proj-links"><a href="https://youtu.be/bqb8qT14MnY" target="_blank" rel="noopener"><i class="fas fa-play"></i> Demo</a></div>
+        </article>
+
+        <article class="proj-card reveal delay-1">
+          <div class="proj-thumb"><img src="./assets/marataba-7.jpg" alt="WildGraph conservation mapping"></div>
+          <div class="proj-top"><span class="proj-kind">Team project</span></div>
+          <h4>WildGraph</h4>
+          <p>Java application applying graph theory and pathfinding algorithms to identify
+          critical wildlife protection corridors.</p>
+          <div class="tech-row"><span>Java</span><span>Graph Theory</span><span>Pathfinding</span></div>
+          <div class="proj-links"><a href="https://youtu.be/H5QFhbg6Dfg" target="_blank" rel="noopener"><i class="fas fa-play"></i> Demo</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="project-category">
+      <h3 class="cat-title">Live and shipped</h3>
+      <div class="proj-grid">
+        <article class="proj-card reveal">
+          <div class="proj-thumb"><img src="./assets/thomu.png" alt="Thomu Plumbing website"></div>
+          <div class="proj-top"><span class="proj-kind">Live site</span></div>
+          <h4>Thomu Plumbing</h4>
+          <p>Business website for a plumbing service — responsive, service-area aware, built
+          to establish a real online presence for a real client.</p>
+          <div class="tech-row"><span>React</span><span>Tailwind CSS</span><span>Hostinger</span></div>
+          <div class="proj-links"><a href="https://thomuplumbing.com/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Visit</a></div>
+        </article>
+
+        <article class="proj-card reveal delay-1">
+          <div class="proj-thumb"><img src="./assets/meme.png" alt="House of Laughter meme generator"></div>
+          <div class="proj-top"><span class="proj-kind">Live app</span></div>
+          <h4>House of Laughter</h4>
+          <p>Meme generator with live API integration, random generation, and daily fresh content.</p>
+          <div class="tech-row"><span>React</span><span>API</span></div>
+          <div class="proj-links">
+            <a href="https://fantastic-meme-forall.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+            <a href="https://github.com/lutendomaumela/fantastic-meme" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <article class="proj-card reveal delay-2">
+          <div class="proj-thumb"><img src="./assets/todo.png" alt="Productivity Suite todo app"></div>
+          <div class="proj-top"><span class="proj-kind">Live app</span></div>
+          <h4>Productivity Suite</h4>
+          <p>Todo application with local storage, categorization, and state management built
+          to demonstrate clean React patterns.</p>
+          <div class="tech-row"><span>React</span><span>Local Storage</span></div>
+          <div class="proj-links">
+            <a href="https://todo-app-theta-jade.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+            <a href="https://github.com/lutendomaumela/React-Todo-App" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <article class="proj-card reveal">
+          <div class="proj-thumb"><img src="./assets/weather.png" alt="Weather Intelligence app"></div>
+          <div class="proj-top"><span class="proj-kind">Live app</span></div>
+          <h4>Weather Intelligence</h4>
+          <p>Real-time forecasting app with location-based services and clean data visualization.</p>
+          <div class="tech-row"><span>JavaScript</span><span>API</span></div>
+          <div class="proj-links">
+            <a href="https://weather-forecast-three-phi.vercel.app/" target="_blank" rel="noopener"><i class="fas fa-external-link-alt"></i> Live</a>
+            <a href="https://github.com/lutendomaumela/Weather-app" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow">$ verify — credentials check</p>
+    <h2 class="section-title">Certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-row reveal">
+        <i class="fab fa-google"></i>
+        <div>
+          <h4>Google Security Operations — Deep Dive</h4>
+          <p>Security operations using Google Cloud security tools and the Chronicle platform for threat detection and response.</p>
+        </div>
+      </div>
+      <div class="cert-row reveal delay-1">
+        <i class="fab fa-google"></i>
+        <div>
+          <h4>Google Security Operations — Fundamentals</h4>
+          <p>Foundations of security operations, threat intelligence, and incident response.</p>
+        </div>
+      </div>
+      <div class="cert-row reveal delay-2">
+        <i class="fas fa-network-wired"></i>
+        <div>
+          <h4>Datacom Security Operations Simulation</h4>
+          <p>Practical incident-response simulation: ransomware investigation, documentation, and risk assessment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="container">
+    <p class="eyebrow">$ connect — open a channel</p>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="section-sub">Open to junior software engineering and cloud/DevOps roles across South Africa.</p>
+
+    <div class="contact-grid">
+      <a href="mailto:lutendomaumela28@gmail.com" class="contact-card reveal">
+        <i class="fas fa-envelope"></i>
+        <div><h4>Email</h4><p>lutendomaumela28@gmail.com</p></div>
+      </a>
+      <a href="tel:+27791525189" class="contact-card reveal delay-1">
+        <i class="fas fa-phone"></i>
+        <div><h4>Phone</h4><p>079 152 5189</p></div>
+      </a>
+      <a href="https://www.linkedin.com/in/lutendo-maumela-6a0328261/" target="_blank" rel="noopener" class="contact-card reveal delay-2">
+        <i class="fab fa-linkedin"></i>
+        <div><h4>LinkedIn</h4><p>Connect / endorse</p></div>
+      </a>
+      <a href="https://github.com/lutendomaumela" target="_blank" rel="noopener" class="contact-card reveal">
+        <i class="fab fa-github"></i>
+        <div><h4>GitHub</h4><p>github.com/lutendomaumela</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>Lutendo Maumela — built and deployed, not just designed.</span>
+    <span class="footer-status"><span class="dot small"></span> site status: live</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
